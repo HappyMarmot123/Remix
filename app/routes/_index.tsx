@@ -1,6 +1,7 @@
 import type { ActionFunction, MetaFunction } from "@remix-run/node";
 import { Form, useActionData } from "@remix-run/react";
 import { useState } from "react";
+import DustySnow from "~/component/dustySnow";
 
 export const meta: MetaFunction = () => {
   return [
@@ -18,9 +19,6 @@ export const action: ActionFunction = async ({ request }) => {
   // DELETE
 
   const formData = await request.formData();
-  const fuck1 = formData.get("fuck1");
-  const fuck2 = formData.get("fuck2");
-  const fuck3 = formData.get("fuck3");
 
   // 서버 사이드에서 실행되는 action 함수의 콘솔 로그는 브라우저의 개발자 도구가 아닌 서버 터미널에서 확인해야 합니다.
   console.log(request);
@@ -55,6 +53,8 @@ export default function Index() {
 
   return (
     <div className="h-screen relative">
+      <DustySnow />
+      <article className="my-gradient fixed w-screen" />
       <section className="max-w-72 max-h-96 px-8 py-16 absolute inset-0 m-auto bg-white shadow-sm rounded-lg flex items-center justify-center">
         <Form
           method="post"
