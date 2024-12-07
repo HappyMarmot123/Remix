@@ -15,8 +15,8 @@ export default function Index() {
     <div className="h-full relative">
       <DustySnow />
       <Cursor />
-      <article className="my-gradient fixed w-screen" />
-      <section className="h-screen flex flex-col justify-between">
+      <article className="my-gradient fixed w-screen pointer-events-none" />
+      <section className="min-h-screen flex flex-col justify-between">
         <div>
           <div className="text-center">
             <h1 className="text-[18vw] font-bold leading-[0.9]">Marmot</h1>
@@ -30,7 +30,7 @@ export default function Index() {
             </p>
           </span>
         </div>
-        <div className="grid grid-cols-[1fr_2fr_4fr] items-center justify-between leading-[0.9] px-[0.2vw] h-[12vw]">
+        <div className="grid grid-cols-[1fr_2fr_4fr] items-center justify-between leading-[0.9] px-[2vw] h-[12vw]">
           <div className="text-left">
             <p className="font-[900]">scroll to</p>
             <p className="font-[900]">explore</p>
