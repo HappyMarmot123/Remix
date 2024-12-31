@@ -154,7 +154,7 @@ export default function Index() {
               <p className="font-[600] tracking-[-0.01em] uppercase">
                 Framer Motion Animate
               </p>
-              <p className="font-[600] tracking-[-0.01em] uppercase">
+              <p className="text-[clamp(2.5rem,6vw,4.5rem)] font-[600] tracking-[-0.01em] uppercase">
                 Website designed by Happy marmot 123
               </p>
             </div>
